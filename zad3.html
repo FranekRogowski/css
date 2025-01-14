@@ -3,49 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: "Times New Roman", Times, serif;
-            margin: 20px;
-        }
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 0 auto;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            text-align: center;
-            font-size: 18px;
-        }
-        td {
-            vertical-align: top;
-        }
-        .highlight {
-            font-weight: bold;
-        }
-        /* Proporcje kolumn */
-        td:first-child {
-            width: 40%;
-        }
-        td:last-child {
-            width: 60%;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <table>
-        <thead>
+    <table border="1">
+  
             <tr>
-                <th colspan="2">Cechy modyfikowania formatowania w:</th>
+                <td colspan="2">Cechy modyfikowania formatowania w:</td>
             </tr>
-        </thead>
-        <tbody>
+       
             <tr>
                 <td><b>w HTML</b></td>
                 <td><b>w CSS</b></td>
@@ -53,45 +20,85 @@
             <tr>
                 <td>
                     Modyfikacja wyglądu elementów strony jest bardzo 
-                    <span class="highlight">żmudna</span> (atrybuty i znaczniki, które za to odpowiadają, są porozrzucane w różnych miejscach kodu, mieszając się ze strukturą dokumentu).
+                    <b>żmudna</b> (atrybuty i znaczniki, które za to odpowiadają, są porozrzucane w różnych miejscach kodu, mieszając się ze strukturą dokumentu).
                 </td>
                 <td>
-                    Rozdzielenie <span class="highlight">struktury i prezentacji</span> dokumentów, czyli: wszystkie polecenia dotyczące formatowania można umieścić w jednym miejscu (tzw. arkuszu) i powiązać je z konkretnymi elementami, wstawionymi za pomocą czystego (X)HTML. Taki sposób sprawia, że modyfikacja wyglądu stron może przebiegać dużo sprawniej.
+                    Rozdzielenie <b>struktury i prezentacji</b> dokumentów, czyli: wszystkie polecenia dotyczące formatowania można umieścić w jednym miejscu (tzw. arkuszu) i powiązać je z konkretnymi elementami, wstawionymi za pomocą czystego (X)HTML. Taki sposób sprawia, że modyfikacja wyglądu stron może przebiegać dużo sprawniej.
                 </td>
             </tr>
-        </tbody>
     </table>
     <h2>Nowe możliwości CSS</h2>
     <ol>
         <li>
-            <span class="highlight">Przestarzałe atrybuty i znaczniki</span>, znajdujące się bezpośrednio w składni HTML, które dotyczą formatowania 
-            (elementy <span class="highlight">zddeprecatedowane</span>), będą stopniowo wycofywane przez producentów przeglądarek internetowych, 
+            <b>Przestarzałe atrybuty i znaczniki</b>, znajdujące się bezpośrednio w składni HTML, które dotyczą formatowania 
+            (elementy <b">zddeprecatedowane</b>), będą stopniowo wycofywane przez producentów przeglądarek internetowych, 
             na rzecz rekomendowanych analogicznych deklaracji CSS.</li>
         <li>
-            Dokumenty pisane z wykorzystaniem arkuszy stylów są zwykle bardziej <span class="highlight">przejrzyste i krótsze</span>. </li>
+            Dokumenty pisane z wykorzystaniem arkuszy stylów są zwykle bardziej <b">przejrzyste i krótsze</b>. </li>
         <li>
-            Style pozwalają w <span class="highlight">łatwy sposób zarządzać</span> całą serią dokumentów, poprzez stosowanie 
+            Style pozwalają w <b>łatwy sposób zarządzać</b całą serią dokumentów, poprzez stosowanie 
             zewnętrznych arkuszy stylów.</li>
         <li>
             Dzięki możliwości stosowania klas selektorów, znacznie oszczędzamy sobie pisania. 
-            W <span class="highlight">jednym miejscu określamy wszystkie atrybuty formatowania</span> (których może być bardzo dużo), 
+            W <b">jednym miejscu określamy wszystkie atrybuty formatowania</b> (których może być bardzo dużo), 
             odnoszące się do wielu elementów, które mają wyglądać tak samo. Bezpośrednio przy elemencie wystarczy podać tylko nazwę klasy i 
             nie musimy już wypisywać dużej ilości poleceń. Znacznie przyspiesza to późniejszą modyfikację strony, ponieważ zmian dokonujemy 
             tylko w jednym miejscu, a wpływa ona na wiele elementów jednocześnie.</li>
         <li>
-            Możliwość <span class="highlight">stosowania różnorodnych jednostek oraz sposobów definiowania kolorów</span>.</li>
+            Możliwość <b>stosowania różnorodnych jednostek oraz sposobów definiowania kolorów</b>.</li>
         <li>
-            Różne wartości <span class="highlight">pogrubienia czcionki</span> (9 rodzajów).</li>
+            Różne wartości <b>pogrubienia czcionki</b> (9 rodzajów).</li>
         <li>
-            <span class="highlight">Dodatkowe możliwości formatowania tekstu</span>.</li>
+            <b>Dodatkowe możliwości formatowania tekstu</b>.</li>
         <li>
-            <span class="highlight">Efektowne filtry graficzne</span>.</li>
+            <b>Efektowne filtry graficzne</b>.</li>
         <li>
-            Dodatkowe możliwości <span class="highlight">określenia wyglądu dokumentów podczas ich drukowania</span>.</li>
+            Dodatkowe możliwości <b>określenia wyglądu dokumentów podczas ich drukowania</b>.</li>
     </ol>
-    <p><span class="underline">Uwaga:</span></p>
+    <p><u>Uwaga:</u></p>
     <p>
-        W ciągłym opracowaniu są <span class="highlight">style poziomu trzeciego (CSS 3)</span>, które oferują jeszcze więcej rozwiązań. 
+        W ciągłym opracowaniu są <b>style poziomu trzeciego (CSS 3)</b>, które oferują jeszcze więcej rozwiązań. 
+        Aby dowiedzieć się więcej, sprawdzaj stronę organizacji W3C oraz najnowsze specyfikacje.
+    </p>
+ <h3>Wady CSS</h3>
+ <ol>
+        <li>Złożona specyfikacja (składnia) nietolerująca, żadnych błędów składniowych.</li>
+        <li>Problemy związane z błędów podczas wykonywania styli CSS oraz podczas ich realizacji.</li>
+        <li>Błędne obsługiwanie CSS przez różne przeglądarki.</li>
+    </ol>
+</body>
+</html>
+    <h2>Nowe możliwości CSS</h2>
+    <ol>
+        <li>
+            <b>Przestarzałe atrybuty i znaczniki</b>, znajdujące się bezpośrednio w składni HTML, które dotyczą formatowania 
+            (elementy <b>zddeprecatedowane</b>), będą stopniowo wycofywane przez producentów przeglądarek internetowych, 
+            na rzecz rekomendowanych analogicznych deklaracji CSS.</li>
+        <li>
+            Dokumenty pisane z wykorzystaniem arkuszy stylów są zwykle bardziej <b>przejrzyste i krótsze<b></b>. </li>
+        <li>
+            Style pozwalają w <b>łatwy sposób zarządzać</b> całą serią dokumentów, poprzez stosowanie 
+            zewnętrznych arkuszy stylów.</li>
+        <li>
+            Dzięki możliwości stosowania klas selektorów, znacznie oszczędzamy sobie pisania. 
+            W <b>jednym miejscu określamy wszystkie atrybuty formatowania</b> (których może być bardzo dużo), 
+            odnoszące się do wielu elementów, które mają wyglądać tak samo. Bezpośrednio przy elemencie wystarczy podać tylko nazwę klasy i 
+            nie musimy już wypisywać dużej ilości poleceń. Znacznie przyspiesza to późniejszą modyfikację strony, ponieważ zmian dokonujemy 
+            tylko w jednym miejscu, a wpływa ona na wiele elementów jednocześnie.</li>
+        <li>
+            Możliwość <b">stosowania różnorodnych jednostek oraz sposobów definiowania kolorów</b>.</li>
+        <li>
+            Różne wartości <b>pogrubienia czcionki</b> (9 rodzajów).</li>
+        <li>
+            <b">Dodatkowe możliwości formatowania tekstu</b>.</li>
+        <li>
+            <b>Efektowne filtry graficzne</b>.</li>
+        <li>
+            Dodatkowe możliwości <b>określenia wyglądu dokumentów podczas ich drukowania</b>.</li>
+    </ol>
+    <p><u>Uwaga:</b></p>
+    <p>
+        W ciągłym opracowaniu są <b>style poziomu trzeciego (CSS 3)</b>, które oferują jeszcze więcej rozwiązań. 
         Aby dowiedzieć się więcej, sprawdzaj stronę organizacji W3C oraz najnowsze specyfikacje.
     </p>
  <h3>Wady CSS</h3>
