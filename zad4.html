@@ -4,79 +4,60 @@
     <meta charset="UTF-8">
     <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
     <title>Sposoby podłączania styli</title>
-    <style>
-        body {
-             font-family: "Times New Roman", Times, serif;
-            margin: 20px;
-        }
-        h1 {
-            font-size: 22px;
-        }
-        ol {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 15px;
-        }
-        .highlight {
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #000;
-            display: block;
-            white-space: pre-wrap;
-        }
-    </style>
+   
 </head>
 <body>
 
     <h1>Sposoby podłączania styli do strony (skrócone zestawienie).</h1>
     <ol>
         <li>
-            <span class="highlight">Zewnętrzny</span> arkusz stylów.
-            <pre>
-&lt;head&gt;
-    &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;
-&lt;/head&gt;
-            </pre>
+            <b>Zewnętrzny</b> arkusz stylów. 
+<br>
+            <textarea rows="4" cols="80">
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+           </textarea>
         </li>
         <li>
-            <span class="highlight">Styl lokalny</span> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli dopisanie arkusza do wybranego bloku treści strony.
-            <pre>
-&lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;
-            </pre>
+            <b>Styl lokalny</b> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli dopisanie arkusza do wybranego bloku treści strony.
+<br>
+            <textarea rows="6" cols="80">
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+            </textarea>
         </li>
         <li>
-            <span class="highlight">Wewnętrzny</span> arkusz stylów.
-            <pre>
-&lt;head&gt;
-    &lt;style type="text/css"&gt;
+            <b>Wewnętrzny</b> arkusz stylów.
+<br>
+            <textarea rows="7" cols="80">
+<head>
+    <style type="text/css">
         selektor1 { cecha: wartość; cecha2: wartość2... }
         selektor2 { cecha: wartość; cecha2: wartość2... }
-    &lt;/style&gt;
-&lt;/head&gt;
-            </pre>
+    </style>
+</head>
+            </textarea>
         </li>
         <li>
-            <span class="highlight">Alternatywny</span> arkusz stylów.
-            <pre>
-&lt;head&gt;
-    &lt;link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt;
-    &lt;link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;
-    &lt;link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt;
-&lt;/head&gt;
-            </pre>
+            <b>Alternatywny</b> arkusz stylów.
+<br>
+            <textarea rows="10" cols="80">
+
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+    <link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+    <link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+            </textarea>
         </li>
         <li>
-            <span class="highlight">Import</span> arkusza stylów.
-            <pre>
-&lt;style type="text/css"&gt;
+            <b>Import</b> arkusza stylów.
+<br>
+           <textarea rows="4" cols="80">
+<style type="text/css">
     @import url(adres zewnętrznego arkusza stylów);
-&lt;/style&gt;
-            </pre>
+</style>
+            </textarea>
         </li>
     </ol>
 
