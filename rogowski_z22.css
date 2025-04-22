@@ -1,0 +1,19 @@
+p {
+    color: red;
+    font-size: 22pt;
+}
+
+#gruby_rogowski,
+#gruby_rogowski_2,
+#gruby_rogowski_3,
+#gruby_rogowski_4 {
+    color: green;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+#dlawszyskich_rogowski {
+    color: yellow;
+    font-size: 10pt;
+    font-family: Arial, sans-serif;
+}
